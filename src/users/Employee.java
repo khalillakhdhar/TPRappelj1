@@ -35,6 +35,23 @@ public class Employee extends User {
 		return this.salaireBrute-this.calculeTaxes();
 		
 	}
+	
+	
+	
+	
+	
+	
+	
+	public Employee() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Employee(String nom, String prenom, int age, String adresse, String telephone, String profession,
+			double salaireBrute) {
+		super(nom, prenom, age, adresse, telephone);
+		this.profession = profession;
+		this.salaireBrute = salaireBrute;
+	}
 	@Override
 	public String toString() {
 		return "Employee [profession=" + profession + ", salaireBrute=" + salaireBrute + ", Taxe à payer="
